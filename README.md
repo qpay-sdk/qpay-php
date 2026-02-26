@@ -1,5 +1,6 @@
 # QPay PHP SDK
 
+[![CI](https://github.com/qpay-sdk/qpay-php/actions/workflows/ci.yml/badge.svg)](https://github.com/qpay-sdk/qpay-php/actions/workflows/ci.yml)
 [![Packagist Version](https://img.shields.io/packagist/v/usukhbayar/qpay-php.svg)](https://packagist.org/packages/usukhbayar/qpay-php)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
