@@ -1,5 +1,8 @@
 # QPay PHP SDK
 
+[![Packagist Version](https://img.shields.io/packagist/v/usukhbayar/qpay-php.svg)](https://packagist.org/packages/usukhbayar/qpay-php)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 PHP SDK for the QPay V2 payment gateway API. Provides a clean, type-safe interface with automatic token management, Guzzle-based HTTP, and comprehensive error handling.
 
 ## Requirements
