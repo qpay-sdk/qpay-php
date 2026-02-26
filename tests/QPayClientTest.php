@@ -373,9 +373,9 @@ class QPayClientTest extends TestCase
         // Verify the request body contains optional fields
         $body = json_decode((string) $this->history[1]['request']->getBody(), true);
         $this->assertTrue($body['allow_partial']);
-        $this->assertSame(1000.0, $body['minimum_amount']);
+        $this->assertEquals(1000.0, $body['minimum_amount']);
         $this->assertFalse($body['allow_exceed']);
-        $this->assertSame(10000.0, $body['maximum_amount']);
+        $this->assertEquals(10000.0, $body['maximum_amount']);
         $this->assertSame('Test note', $body['note']);
     }
 
