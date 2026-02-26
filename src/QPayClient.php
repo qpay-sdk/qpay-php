@@ -39,6 +39,7 @@ class QPayClient
     ) {
         $this->http = $http ?? new HttpClient([
             'timeout' => 30,
+            'http_errors' => false,
         ]);
     }
 
@@ -281,6 +282,7 @@ class QPayClient
                 'headers' => [
                     'Authorization' => 'Bearer ' . $refreshTok,
                 ],
+                'http_errors' => false,
             ]);
         } catch (GuzzleException $e) {
             throw new QPayException(
@@ -330,6 +332,7 @@ class QPayClient
                 'Content-Type' => 'application/json',
                 'Authorization' => 'Bearer ' . $this->accessToken,
             ],
+            'http_errors' => false,
         ];
 
         if ($body !== null) {
@@ -372,6 +375,7 @@ class QPayClient
         try {
             $response = $this->http->request($method, $url, [
                 'auth' => [$this->config->username, $this->config->password],
+                'http_errors' => false,
             ]);
         } catch (GuzzleException $e) {
             throw new QPayException(
