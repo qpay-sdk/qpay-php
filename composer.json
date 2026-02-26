@@ -1,5 +1,5 @@
 {
-    "name": "usukhbayar/qpay-php",
+    "name": "qpay-sdk/qpay-php",
     "description": "QPay V2 API PHP SDK with auto token management",
     "type": "library",
     "license": "MIT",
