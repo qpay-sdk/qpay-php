@@ -10,7 +10,7 @@ PHP SDK for the QPay V2 payment gateway API. Provides a clean, type-safe interfa
 ## Installation
 
 ```bash
-composer require qpay-sdk/qpay-php
+composer require usukhbayar/qpay-php
 ```
 
 ## Quick Start
